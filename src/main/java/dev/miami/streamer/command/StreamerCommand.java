@@ -18,7 +18,7 @@ public class StreamerCommand {
                 .then(ClientCommandManager.literal("change")
                         .then(ClientCommandManager.literal("others")
                                 .then(ClientCommandManager.argument("username", StringArgumentType.greedyString())
-                                        .executes(ctx -> Streamer.changeOthersName(StringArgumentType.getString(ctx, "prefix")))
+                                        .executes(ctx -> Streamer.changeOthersName(StringArgumentType.getString(ctx, "name")))
                                 )
                         )
                         .then(ClientCommandManager.literal("self")
