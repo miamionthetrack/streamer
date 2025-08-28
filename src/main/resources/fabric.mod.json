@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "streamer",
+	"version": "${version}",
+	"name": "Streamer",
+	"description": "Hides your name client-side & allows you to hide other players' names as well.",
+	"authors": [
+		"Miami"
+	],
+	"contact": {
+		"sources": "https://github.com/miamionthetrack/streamer",
+		"issues": "https.//github.com/miamionthetrack/streamer/issues",
+		"homepage": "https://modrinth.com/mod/streaming"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/streamermode/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.miami.streamer.StreamerModeInitializer"
+		]
+	},
+	"mixins": [
+		"streamer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
